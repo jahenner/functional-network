@@ -109,6 +109,7 @@ def mat2graph(adj_mat, confidence_level, active_area, cc=False, weight=False):
 def load_graphs(directory, active_area_dict, weight):
   G_dict, offset_dict, duration_dict = {}, {}, {}
   files = os.listdir(directory)
+  files.remove("README.md")
   files.sort(key=lambda x:int(x[:9]))
   for file in files:
     if ('_offset' not in file) and ('_duration' not in file) and ('confidence' not in file):
