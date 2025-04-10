@@ -1,6 +1,0 @@
-name: functional-network
-environments:
-  default:
-    - environment.yml
-variables: {}
-commands: {}
